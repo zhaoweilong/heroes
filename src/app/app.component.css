@@ -1,0 +1,12 @@
+.app-layout {
+  height: 100vh;
+}
+nz-header{
+  background-color: #f0f2f5;
+}
+[nz-menu-item]{
+  width: 400px;
+}
+a {
+  text-align: center;
+}
