@@ -1,1 +1,9 @@
-<p>messages works!</p>
+<h3 [ngStyle]="{ 'margin-bottom.px': 16 }">message</h3>
+<button nz-button nzType="primary">clear</button>
+<nz-list [nzDataSource]="messageService.messages"  nzBordered  [nzRenderItem]="defaultItem">
+  <ng-template #defaultItem let-item>
+    <nz-list-item>
+      {{ item }}
+    </nz-list-item>
+  </ng-template>
+</nz-list>
